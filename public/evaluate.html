@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>선택 이유 평가</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="evaluationForm">
+    <h2>선택한 썸네일의 이유는 무엇인가요?</h2>
+    
+    <label><input type="checkbox" name="reasons" value="눈에 띄어서">눈에 띄어서</label><br>
+    <label><input type="checkbox" name="reasons" value="내용이 흥미로워 보여서">내용이 흥미로워 보여서</label><br>
+    <label><input type="checkbox" name="reasons" value="색이 강렬해서">색이 강렬해서</label><br>
+    <label><input type="checkbox" name="reasons" value="텍스트가 궁금해서">텍스트가 궁금해서</label><br>
+    
+    <h3>다른 썸네일을 고르지 않은 이유는?</h3>
+    <label><input type="checkbox" name="nonreasons" value="지루해보여서">지루해보여서</label><br>
+    <label><input type="checkbox" name="nonreasons" value="자극적이라 꺼려짐">자극적이라 꺼려짐</label><br>
+    <label><input type="checkbox" name="nonreasons" value="정보 부족">정보 부족</label><br>
+
+    <button type="submit">제출하기</button>
+  </form>
+
+  <script src="firebase-config.js"></script>
+  <script src="evaluate.js"></script>
+</body>
+</html>

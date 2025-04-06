@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  body.light {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  body.dark {
+    background-color: #474747;
+    color: #fff;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .thumbnail-set {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .thumb {
+    width: 30%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: transform 0.2s, border 0.2s;
+  }
+  
+  .thumb:hover {
+    transform: scale(1.05);
+  }
+  
+  .thumb.selected {
+    border: 3px solid #007BFF;
+  }
+  
